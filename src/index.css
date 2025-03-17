@@ -7,3 +7,7 @@
 @utility features-height {
 	height: calc(100vh * 0.67);
 }
+
+@utility dark-deep-blue {
+	background-color: #1B3A57;
+}

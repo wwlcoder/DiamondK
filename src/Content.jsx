@@ -5,7 +5,7 @@ import Line from './Line';
 
 const Content = () => {
 	return (
-		<main className="max-w-4xl mx-auto">
+		<main className="max-w-dvw mx-auto dark:bg-gray-900">
 			<Hero />
 			<Line />
 			<Games />

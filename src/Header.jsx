@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 
 		<header
-			className="bg-rose-100 text-slate-900 sticky top-0 z-50"
+			className="bg-rose-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 sticky top-0 z-50"
 		>
 			<section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
 				<h1 className="text-3xl font-medium">
