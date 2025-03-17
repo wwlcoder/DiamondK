@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@utility section-min-height {
+	min-height: calc(100vh - 68px);
+}
+
+@utility features-height {
+	height: calc(100vh * 0.67);
+}
