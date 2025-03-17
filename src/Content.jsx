@@ -5,7 +5,7 @@ import Line from './Line';
 
 const Content = () => {
 	return (
-		<main className="flex flex-col max-w-dvw mx-auto dark:bg-gray-900">
+		<main className="max-w-dvw mx-auto dark:bg-gray-900">
 			<Hero />
 			<Line />
 			<Games />

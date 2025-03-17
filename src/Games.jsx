@@ -13,7 +13,7 @@ const Games = () => {
 			>
 				Our Games
 			</h2>
-			<ul className="list-none mx-auto h-screen flex flex-col sm:flex-row gap-8 justify-center items-center">
+			<ul className="list-none mx-auto min-h-screen flex flex-col sm:flex-row gap-8 justify-center items-center">
 				<li
 					className="w-11/12 items-center sm:w-5/6 features-height flex flex-col border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
 					<div className="text-center">
