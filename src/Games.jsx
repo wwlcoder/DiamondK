@@ -1,3 +1,7 @@
+import deepstack from './public/assets/images/deepstacks.jpg';
+import action from './public/assets/images/action.jpg';
+import freebies from './public/assets/images/freebies.jpg';
+
 const Games = () => {
 	return (
 		<section
@@ -15,7 +19,7 @@ const Games = () => {
 					<div className="flex text-center">
 						<h2 className="text-4xl text-center text-slate-900 font-bold p-2 mb-8">Experience an Action-Packed Game!</h2>
 					</div>
-					<img src="https://picsum.photos/1920/1080" alt="Action-Packed" className="w-11/12 rounded-xl mb-6" />
+					<img src={deepstack} alt="Action-Packed" className="w-11/12 rounded-xl mb-6" />
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">$1/$2 with frequent straddles from action-packed players who loves big pots!</p>
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">$1/$3 Squid Texas Hold-Em. Enjoy high-stakes thrills at affordable stakes!</p>
 				</li>
@@ -24,7 +28,7 @@ const Games = () => {
 					<div className="flex text-center">
 						<h2 className="text-4xl text-center text-slate-900 font-bold p-2 mb-8">Frequent straddles = Big Wins!</h2>
 					</div>
-					<img src="https://picsum.photos/1920/1080" alt="Action-Packed" className="w-11/12 rounded-xl mb-6" />
+					<img src={action} alt="Action-Packed" className="w-11/12 rounded-xl mb-6" />
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">Minimum Buy-in at Only $100!</p>
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">Frequent straddles from action-players</p>
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">Win big with just a small buy-in!</p>
@@ -34,7 +38,7 @@ const Games = () => {
 					<div className="flex text-center">
 						<h2 className="text-4xl text-center text-slate-900 font-bold p-2 mb-8">Freebies for maximum enjoyment!</h2>
 					</div>
-					<img src="https://picsum.photos/1920/1080" alt="Action-Packed" className="w-11/12 rounded-xl mb-6" />
+					<img src={freebies} alt="Action-Packed" className="w-11/12 rounded-xl mb-6" />
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">Free drinks, fresh fruits, cigarettes and food!</p>
 					<p className="text-2xl text-center mt-2 text-slate-900 dark:text-slate-400 p-2">Win bonus jackpots when you hit big hands or take down a pot with 72 after the flop is dealt</p>
 

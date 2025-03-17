@@ -9,11 +9,11 @@ const App = () => {
 	return (
 		<>
 			<Header />
-			<Content />
-			<Footer />
 			<Routes>
 				<Route path="/rules" element={<Rules />} />
+				<Route path="/" element={<Content />} />
 			</Routes>
+			<Footer />
 		</>
 	)
 }

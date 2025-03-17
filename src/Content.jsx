@@ -11,7 +11,6 @@ const Content = () => {
 			<Games />
 			<Line />
 			<Testimonial />
-
 		</main>
 	)
 }

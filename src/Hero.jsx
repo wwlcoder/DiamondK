@@ -1,3 +1,5 @@
+import hero from './public/assets/images/hero.jpg';
+
 const Hero = () => {
 	return (
 		<section
@@ -7,7 +9,7 @@ const Hero = () => {
 			<article className="sm:w-1/2">
 				<h2
 					className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-					Experience the most <span class="text-indigo-700 dark:text-indigo-300">action-packed No Limit Texas Hold'em Poker</span> game in Sihanoukville!
+					Experience the most <span className="text-indigo-700 dark:text-indigo-300">action-packed No Limit Texas Hold'em Poker</span> game in Sihanoukville!
 				</h2>
 				<p className="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
 					No tight professional players who plays GTO ranges.Only action junkies who loves to gamble and have fun!
@@ -17,8 +19,8 @@ const Hero = () => {
 				</p>
 			</article>
 			<img
-				className="w-1/2"
-				src="https://picsum.photos/400"
+				className="w-1/2 h-1/2 rounded-3xl"
+				src={hero}
 				alt="Action-Packed Poker" />
 
 		</section >

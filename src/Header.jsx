@@ -1,5 +1,6 @@
 import { FaTelegramPlane } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
 	return (
@@ -9,7 +10,7 @@ const Header = () => {
 		>
 			<section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
 				<h1 className="text-3xl font-medium">
-					<a href="#hero">♦️ Poker Club</a>
+					<HashLink to='/#hero'>♦️ Poker Club</HashLink>
 				</h1>
 				<div>
 					<button
@@ -20,9 +21,9 @@ const Header = () => {
 						</div>
 					</button>
 					<nav className="hidden md:block space-x-8 text-xl" aria-label="main">
-						<a href="#games">Our Games</a>
-						<a href="#testimonials">Testimonials</a>
-						<Link to='/rules'>Rules</Link>
+						<HashLink to='/#games'>Our Games</HashLink>
+						<HashLink to='/#testimonials'>Testimonials</HashLink>
+						<HashLink to='/rules#handranks'>Rules</HashLink>
 						<a href="https://google.com">
 							<FaTelegramPlane
 								className="inline text-3xl text-slate-800"
@@ -40,11 +41,9 @@ const Header = () => {
 					aria-label="mobile"
 				>
 					<a href="#hero" className="w-full text-center py-6 hover:opacity-90">Home</a>
-					<a href="#games" className="w-full text-center py-6 hover:opacity-90">Our Games</a>
-					<a href="#testimonials" className="w-full text-center py-6 hover:opacity-90">Testimonials</a>
-					<a href="#contact" className="w-full text-center py-6 hover:opacity-90">Contact Us</a>
-
-
+					<HashLink to='/#games'>Our Games</HashLink>
+					<HashLink to='/#testimonials'>Testimonials</HashLink>
+					<HashLink to='/rules'>Rules</HashLink>
 				</nav>
 			</section>
 		</header>
