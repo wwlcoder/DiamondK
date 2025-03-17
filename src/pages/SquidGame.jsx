@@ -1,4 +1,9 @@
+import { useTranslation } from 'react-i18next';
+
+
 const SquidGame = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section
 			className="flex flex-col p-6 items-center gap-8 scroll-mt-20 justify-start"
@@ -6,15 +11,15 @@ const SquidGame = () => {
 			<h2
 				className="text-4xl font-bold text-center sm:text-5xl mt-6 text-slate-900 dark:text-white"
 			>
-				How to Play the Squid Game
+				{t('rules_header3')}
 			</h2>
 			<div className="w-2/3 grid grid-cols-1 grid-rows-5 p-2 shadow-xl rounded-xl border border-gray-100">
-				<span className="p-4 text-lg text-center dark:text-slate-100">One squid marker per player at the table</span>
-				<span className="bg-rose-50 p-4 text-lg text-center">A marker placed in the pot per hand</span>
-				<span className="p-4 text-lg text-center dark:text-slate-100">Win a hand outright and show your cards to win the marker</span>
-				<span className="bg-rose-50 p-4 text-lg text-center">Anyone without marker after all markers distributed has to pay a bounty to each person with a market</span>
-				<span className="p-4 text-lg text-center dark:text-slate-100">More markers collected translates to more bounties</span>
-				<span className="bg-rose-50 p-4 text-lg text-center">For more thrilling action, there is a multiplier component for more markers collected</span>
+				<span className="p-4 text-lg text-center dark:text-slate-100">{t('squid1')}</span>
+				<span className="bg-rose-50 p-4 text-lg text-center">{t('squid2')}</span>
+				<span className="p-4 text-lg text-center dark:text-slate-100">{t('squid3')}</span>
+				<span className="bg-rose-50 p-4 text-lg text-center">{t('squid4')}</span>
+				<span className="p-4 text-lg text-center dark:text-slate-100">{t('squid5')}</span>
+				<span className="bg-rose-50 p-4 text-lg text-center">{t('squid6')}</span>
 			</div>
 
 

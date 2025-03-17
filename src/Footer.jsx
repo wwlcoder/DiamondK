@@ -1,6 +1,9 @@
 import { HashLink } from 'react-router-hash-link';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+	const { t } = useTranslation();
+
 	return (
 		<footer
 			id="footer"
@@ -8,18 +11,18 @@ const Footer = () => {
 		>
 			<section className="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row justify-between sm:justify-between">
 				<div className="flex flex-col text-xl sm:text-2xl sm:gap-2 basis-1/3 justify-center">
-					<h2 className="font-bold text-center">Contact ♦️ K Poker</h2>
-					<a href="tel:+855123456789" className="text-center">Phone: +855 1234 56789</a>
+					<h2 className="font-bold text-center">{t('footer_contact')}</h2>
+					<a href="tel:+855123456789" className="text-center">{t('phone')}: +855 1234 56789</a>
 
 				</div>
 				<nav className="hidden md:flex flex-col gap-2 basis-1/3 text-center" aria-label="footer">
-					<HashLink to='/#games'>Our Games</HashLink>
-					<HashLink to='/#testimonials'>Testimonials</HashLink>
-					<HashLink to='/rules#handranks'>Rules</HashLink>
+					<HashLink to='/#games'>{t('our_games')}</HashLink>
+					<HashLink to='/#testimonials'>{t('testimonials')}</HashLink>
+					<HashLink to='/rules#handranks'>{t('rules')}</HashLink>
 				</nav>
 				<div className="hidden md:flex flex-col sm:gap-2 text-base sm:text-2xl basis-1/3 justify-center">
-					<h2 className="font-bold text-center">Find us Here!</h2>
-					<p className="text-center">ZheShang Casino, Sihanoukville, KH 18000</p>
+					<h2 className="font-bold text-center">{t('footer_address1')}</h2>
+					<p className="text-center">{t('footer_address2')}</p>
 				</div>
 			</section>
 		</footer>

@@ -1,8 +1,12 @@
 import deepstack from './public/assets/images/deepstacks.jpg';
 import action from './public/assets/images/action.jpg';
 import freebies from './public/assets/images/freebies.jpg';
+import { useTranslation } from 'react-i18next';
+
 
 const Games = () => {
+	const { t } = useTranslation();
+
 	return (
 		<section
 			id="games"
@@ -11,9 +15,9 @@ const Games = () => {
 			<h2
 				className="text-4xl font-bold text-center sm:text-5xl my-6 text-slate-900 dark:text-white p-4"
 			>
-				Our Games
+				{t('our_games')}
 			</h2>
-			<ul className="list-none mx-auto min-h-screen flex flex-col sm:flex-row gap-8 justify-center items-center">
+			<ul className="list-none mx-auto min-h-screen flex flex-col sm:flex-row gap-8 justify-center items-start">
 				<li
 					className="w-11/12 items-center sm:w-5/6 flex flex-col border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
 					<div className="text-center">

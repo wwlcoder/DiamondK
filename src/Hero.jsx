@@ -1,6 +1,10 @@
 import hero from './public/assets/images/hero.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+	const { t } = useTranslation();
+
+
 	return (
 		<section
 			id="hero"
@@ -12,10 +16,10 @@ const Hero = () => {
 					Experience the most <span className="text-indigo-700 dark:text-indigo-300">action-packed No Limit Texas Hold'em Poker</span> game in Sihanoukville!
 				</h2>
 				<p className="max-w-md text-xl sm:text-2xl my-10 sm:my-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-					No tight professional players who plays GTO ranges.Only action junkies who loves to gamble and have fun!
+					{t('hero2')}
 				</p>
 				<p className="max-w-md text-xl sm:text-2xl sm:my-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-					For Fun and Action-Packed Poker. Think ♦️K Poker
+					{t('hero3')}
 				</p>
 			</article>
 			<img
