@@ -8,6 +8,24 @@
 	height: calc(100vh * 0.67);
 }
 
-@utility dark-deep-blue {
-	background-color: #1B3A57;
+@theme {
+	--animate-open-menu: open-menu 0.5s ease-in-out forwards;
+
+	@keyframes open-menu {
+		0% {
+			transform: scaleY(0);
+		}
+
+		80% {
+			transform: scaleY(1.2);
+		}
+
+		100% {
+			transform: scaleY(0);
+		}
+	}
+}
+
+@utility toggle-btn {
+	@apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
 }

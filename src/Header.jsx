@@ -1,9 +1,24 @@
 import { FaTelegramPlane } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
+
+	const sideMenu = () => {
+		const hamburgerBtn = document.getElementById('hamburger-button');
+		const mobileMenu = document.getElementById('mobile-menu');
+
+		const toggleMenu = () => {
+			mobileMenu.classList.toggle('hidden');
+			mobileMenu.classList.toggle('flex');
+			hamburgerBtn.classList.toggle('toggle-btn');
+		}
+
+		hamburgerBtn.addEventListener('click', toggleMenu);
+		mobileMenu.addEventListener('click', toggleMenu);
+	}
+
 	return (
+		document.addEventListener('DOMContentLoaded', sideMenu),
 
 		<header
 			className="bg-rose-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 sticky top-0 z-50"
@@ -17,7 +32,7 @@ const Header = () => {
 						id="hamburger-button"
 						className="text-3xl md:hidden cursor-pointer relative w-8 h-8"
 					>
-						<div className="bg-black w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-black before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-black after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3">
+						<div className="dark:bg-slate-100 before:dark:bg-slate-100 after:dark:bg-slate-100 bg-black w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-black before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-black after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3">
 						</div>
 					</button>
 					<nav className="hidden md:block space-x-8 text-xl" aria-label="main">
@@ -34,7 +49,7 @@ const Header = () => {
 			</section>
 			<section
 				id="mobile-menu"
-				className="absolute top-68 bg-black w-full text-5xl hidden flex-col justify-center origin-top"
+				className="absolute top-16 bg-black w-full text-5xl hidden flex-col justify-center origin-top animate-open-menu"
 			>
 				<nav
 					className="flex flex-col min-h-screen items-center py-8"
