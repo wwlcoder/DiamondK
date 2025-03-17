@@ -17,7 +17,7 @@ const Games = () => {
 			>
 				{t('our_games')}
 			</h2>
-			<ul className="list-none mx-auto min-h-screen flex flex-col sm:flex-row gap-8 justify-center items-start">
+			<ul className="list-none mx-auto min-h-screen flex flex-col sm:flex-row gap-8 justify-center items-center sm:items-start">
 				<li
 					className="w-11/12 items-center sm:w-5/6 flex flex-col border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
 					<div className="text-center">
