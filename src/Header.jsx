@@ -3,23 +3,23 @@ import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
 
-	const sideMenu = () => {
-		const hamburgerBtn = document.getElementById('hamburger-button');
-		const mobileMenu = document.getElementById('mobile-menu');
+	const loadBtn = () => {
+		const hamburgerBtn = document.getElementById("hamburger-button");
+		const mobileMenu = document.getElementById("mobile-menu");
 
 		const toggleMenu = () => {
 			mobileMenu.classList.toggle('hidden');
 			mobileMenu.classList.toggle('flex');
-			hamburgerBtn.classList.toggle('toggle-btn');
+			hamburgerBtn.classList.toggle("toggle-btn");
 		}
 
-		hamburgerBtn.addEventListener('click', toggleMenu);
-		mobileMenu.addEventListener('click', toggleMenu);
+		hamburgerBtn.addEventListener("click", toggleMenu);
+		mobileMenu.addEventListener("click", toggleMenu);
 	}
 
-	return (
-		document.addEventListener('DOMContentLoaded', sideMenu),
+	document.addEventListener("DOMContentLoaded", loadBtn);
 
+	return (
 		<header
 			className="bg-rose-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 sticky top-0 z-50"
 		>
@@ -49,16 +49,36 @@ const Header = () => {
 			</section>
 			<section
 				id="mobile-menu"
-				className="absolute top-16 bg-black w-full text-5xl hidden flex-col justify-center origin-top animate-open-menu"
+				className="absolute top-16 bg-slate-50 text-slate-900 w-full text-3xl sm:text-5xl flex-col hidden justify-center origin-top animate-open-menu"
 			>
 				<nav
 					className="flex flex-col min-h-screen items-center py-8"
 					aria-label="mobile"
 				>
-					<a href="#hero" className="w-full text-center py-6 hover:opacity-90">Home</a>
-					<HashLink to='/#games'>Our Games</HashLink>
-					<HashLink to='/#testimonials'>Testimonials</HashLink>
-					<HashLink to='/rules'>Rules</HashLink>
+					<HashLink
+						to='/#hero'
+						className="w-full text-center py-6 hover:opacity-90"
+					>
+						Home
+					</HashLink>
+					<HashLink
+						to='/#games'
+						className="w-full text-center py-6 hover:opacity-90"
+					>
+						Our Games
+					</HashLink>
+					<HashLink
+						to='/#testimonials'
+						className="w-full text-center py-6 hover:opacity-90"
+					>
+						Testimonials
+					</HashLink>
+					<HashLink
+						to='/rules#handranks'
+						className="w-full text-center py-6 hover:opacity-90"
+					>
+						Rules
+					</HashLink>
 				</nav>
 			</section>
 		</header>
