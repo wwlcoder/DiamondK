@@ -90,25 +90,25 @@ const Header = () => {
 						to='/#hero'
 						className="w-full text-center py-6 hover:opacity-90"
 					>
-						Home
+						{t('club')}
 					</HashLink>
 					<HashLink
 						to='/#games'
 						className="w-full text-center py-6 hover:opacity-90"
 					>
-						Our Games
+						{t('our_games')}
 					</HashLink>
 					<HashLink
 						to='/#testimonials'
 						className="w-full text-center py-6 hover:opacity-90"
 					>
-						Testimonials
+						{t('testimonials')}
 					</HashLink>
 					<HashLink
 						to='/rules#handranks'
 						className="w-full text-center py-6 hover:opacity-90"
 					>
-						Rules
+						{t('rules')}
 					</HashLink>
 				</nav>
 			</section>
