@@ -12,8 +12,8 @@ const Hero = () => {
 		>
 			<article className="sm:w-1/2">
 				<h2
-					className="max-w-md text-3xl font-bold text-center my-10 sm:my-4 sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-					Experience the most <span className="text-indigo-700 dark:text-indigo-300">action-packed No Limit Texas Hold'em Poker</span> game in Sihanoukville!
+					className="text-indigo-700 dark:text-indigo-200 max-w-md text-3xl font-bold text-center my-10 sm:my-4 sm:text-5xl sm:text-left">
+					{t('hero1')}
 				</h2>
 				<p className="max-w-md text-xl sm:text-2xl my-10 sm:my-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
 					{t('hero2')}
