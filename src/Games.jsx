@@ -15,7 +15,7 @@ const Games = () => {
 			</h2>
 			<ul className="list-none mx-auto min-h-screen flex flex-col sm:flex-row gap-8 justify-center items-center">
 				<li
-					className="w-11/12 items-center sm:w-5/6 features-height flex flex-col border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
+					className="w-11/12 items-center sm:w-5/6 flex flex-col border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
 					<div className="text-center">
 						<h2 className="text-2xl sm:text-4xl text-slate-900 font-bold p-2 mb-8">Experience an Action-Packed Game!</h2>
 					</div>
@@ -24,7 +24,7 @@ const Games = () => {
 					<p className="text-xl sm:text-2xl text-center mt-2 text-slate-900 p-2">$1/$3 Squid Texas Hold-Em. Enjoy high-stakes thrills at affordable stakes!</p>
 				</li>
 				<li
-					className="w-11/12 sm:w-5/6 features-height flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
+					className="w-11/12 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
 					<div className="text-center">
 						<h2 className="text-2xl sm:text-4xl text-slate-900 font-bold p-2 mb-8">Frequent straddles and Action = Big Wins!</h2>
 					</div>
@@ -34,7 +34,7 @@ const Games = () => {
 					<p className="text-xl sm:text-2xl text-center mt-2 text-slate-900 p-2">Win big with just a small buy-in!</p>
 				</li>
 				<li
-					className="w-11/12 sm:w-5/6 features-height flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
+					className="w-11/12 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-rose-50 dark:bg-sky-50 py-6 px-2 rounded-3xl shadow-xl">
 					<div className="text-center">
 						<h2 className="text-2xl sm:text-4xl text-slate-900 font-bold p-2 mb-8">Freebies for maximum enjoyment!</h2>
 					</div>
